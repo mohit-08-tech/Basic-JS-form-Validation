@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-lg-8 m-auto d-block">
+            <br /><h1 class=" text-white text-center bg-info">Javascript Form Validation</h1><br />  
+
+        <form action="#" onsubmit="return Validate()" autocomplete="off" class="badge-light" name="myForm">
+            <div class="form-group">
+                <label class="text-black font-weight-bolder">UserName: </label>
+                <input type="text" id="IdUserName" name="username" class="form-control" autocomplete="off"/>
+                <span class="text-danger font-weight-bolder" id="UserName"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="text-black, font-weight-bolder">Password: </label>
+                <input type="text" id="IdPassword" name="username" class="form-control" autocomplete="off"/>
+                <span class="text-danger font-weight-bolder" id="Password"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="text-black, font-weight-bolder">Confirm Password: </label>
+                <input type="text" id="IdConfirmPassword" name="username" class="form-control" autocomplete="off"/>
+                <span class="text-danger font-weight-bolder" id="ConfirmPassword"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="text-black, font-weight-bolder">Mobile No: </label>
+                <input type="text" id="IdMobileNo" name="username" class="form-control" autocomplete="off"/>
+                <span class="text-danger font-weight-bolder" id="MobileNo"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="text-black, font-weight-bolder">Email: </label>
+                <input type="text" id="IdEmail" name="username" class="form-control" autocomplete="off"/>
+                <span class="text-danger font-weight-bolder" id="Email"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn-primary btn-success text-center text-white font-weight-bolder" />
+            </div>
+        </form>
+        </div>
+    </div>
+        <script src="formvalidation.js"></script>
+</body>
+</html>
